@@ -1,0 +1,95 @@
+/* ==========================
+   NAVBAR WRAPPER
+   ========================== */
+.navbar {
+  background: #1c1d21;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-bottom: 2px solid #000;
+}
+
+/* ==========================
+   TOP BAR
+   ========================== */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right span:hover {
+  color: #ffb400;
+  cursor: pointer;
+}
+
+/* ==========================
+   BOTTOM MENU (4 PARTS)
+   ========================== */
+.navbar-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #e89900; /* full orange bar */
+  border-top: 1px solid #333;
+}
+
+.bottom-item {
+  padding: 14px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  background: #e89900; 
+  color: #1c1d21;        /* navy text by default */
+  transition: 0.2s;
+}
+
+.bottom-item:hover {
+  background: #f0a500; /* lighter orange */
+}
+
+/* ACTIVE STATE */
+.bottom-item.active {
+  background: #1c1d21;  /* navy background */
+  color: #ffffff !important; /* white text */
+}
+
+.phone-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wa-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 50%;
+  display: block;
+}
+
+
+

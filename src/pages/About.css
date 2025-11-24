@@ -1,0 +1,152 @@
+.about-page-wrapper {
+  background: #2a2b30;
+  min-height: 100vh;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+
+  gap: 55px;                /* WIDER GAP BETWEEN MAIN & SMALL CARDS */
+  width: 90%; /*kan 85*/
+  margin: 0 auto;
+}
+
+/* MAIN LEFT CARD */
+.main-section {
+  display: flex;
+  background: #fbefdf;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 420px;
+}
+
+.about-image {
+  width: 340px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MAIN TEXT CARD */
+.about-main-card {
+  width: 600px;
+  padding: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   /* text starts from top */
+  align-items: flex-start;       /* left aligned */
+}
+
+/* Title centered ONLY */
+.about-title {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.4;
+  margin: 0 auto 20px auto;       /* center title horizontally */
+  text-align: center;
+  width: 100%;
+   margin-bottom: 10px;
+}
+
+/* Paragraphs left aligned, cleaner spacing */
+.about-text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* IMPROVED BUTTON */
+.learn-btn {
+  background: linear-gradient(180deg, #f0a73f 0%, #e6931e 100%);
+  color: #2b2b2b;
+
+  width: 300px;
+  padding: 7px 0; 
+  height: auto;
+
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+
+  border-radius: 10px;      /* <<< perfect soft-pill shape */
+  cursor: pointer;
+
+  margin-top: 30px;
+  align-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* smooth feel */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.2s ease;
+}
+
+.learn-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+}
+
+.learn-btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.18);
+}
+
+
+/* RIGHT CARDS */
+.small-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+
+.small-card {
+  width: 220px;
+  height: 420px;
+  background: #fbefdf;
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.small-img {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+}
+
+.small-text-box {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.small-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.small-desc {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.45;
+}
