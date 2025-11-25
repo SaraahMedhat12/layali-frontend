@@ -1,62 +1,76 @@
+import "./Trips.css";
 
-import "./Captains.css";
-
-export default function Captains() {
+export default function Trips() {
   return (
-    <div className="captains-page">
-      <div className="captains-container">
+    <div className="trips-page">
+
+      <div className="trips-container">
 
         {/* LEFT MAIN CARD */}
-        <div className="captains-main-card">
-          <img src="/card31.png" alt="Main" className="left-main-img" />
+        <div className="trips-main-card">
 
-          <div className="left-main-text">
-            <h2 className="captains-title">
-              Distinguished Layal Cairo captains
+          <img
+            src="/trips-main.png"
+            alt="Cairo Tower"
+            className="trips-main-img"
+          />
+
+          <div className="trips-main-text">
+            <h2 className="trips-title">
+              Cairo nights give you unforgettable moments
             </h2>
 
-            <p className="captains-desc">
-              We know very well that a large part of our customers’ trust and
-              their distinctive experience begins with the Cairo Nights captains –
-              the true stars of service.<br /><br />
-              And in order to make your experience easier and more luxurious,
-              we have now provided you with a direct booking service with the captain.
+            <p className="trips-desc">
+              Live the luxury experience at special prices! Discover our latest
+              offers on limousine services, hotels, hotel apartments, and trips,
+              and enjoy five-star service at the lowest price.
+              <br /><br />
+              Book now and benefit from our seasonal offers on all our services —
+              because every trip with Cairo Nights deserves to be special.
             </p>
 
-            <button className="learn-btn">
-              Get to know our captains
-            </button>
+            <button className="explore-btn">Explore all offers</button>
           </div>
+
         </div>
 
-        {/* 3 CAPTAIN CARDS */}
-        <div className="captains-cards-row">
-          {[1, 2, 3].map((num) => (
-            <div key={num} className="captain-card">
-              <div className="badge">{num}</div>
+        {/* RIGHT 3 OFFER CARDS */}
+        <div className="offers-row">
 
-              <img src="/driver.png" alt="Captain" className="captain-card-img" />
+          {/* CARD 1 */}
+          <div className="offer-card">
+            <img src="/card14.png" className="offer-img" alt="Luxury limousine"/>
+            <h3 className="offer-title">Luxury limousine offer</h3>
+            <p className="offer-desc">
+              VIP limousine packages for events and daily trips.
+            </p>
+            <button className="offer-btn">اطلب الآن</button>
+          </div>
 
-              {/* BLURRED INFO SECTION */}
-              <div className="captain-info-blur">
+          {/* CARD 2 */}
+          <div className="offer-card">
+            <img src="/card24.png" className="offer-img" alt="Tours"/>
+            <h3 className="offer-title">Tours and discoveries</h3>
+            <p className="offer-desc">
+              Explore Egypt with travel and stay offers.
+            </p>
+            <button className="offer-btn">اطلب الآن</button>
+          </div>
 
-                <div className="captain-info">
-                  <h3 className="captain-name">Yehia Elbasha (5⭐)</h3>
+          {/* CARD 3 */}
+          <div className="offer-card">
+            <img src="/card34.png" className="offer-img" alt="Hotel offers"/>
+            <h3 className="offer-title">Hotel offers</h3>
+            <p className="offer-desc">
+              Discover the latest hotel offers.
+            </p>
+            <button className="offer-btn">اطلب الآن</button>
+          </div>
 
-                  <p className="captain-sub">Yahya Islam</p>
-                  <p className="captain-trips">16 trips</p>
-                </div>
-
-                <button className="reserve-btn">
-                  Reserve
-                </button>
-
-              </div>
-            </div>
-          ))}
         </div>
 
       </div>
+
     </div>
   );
 }
