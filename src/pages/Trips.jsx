@@ -62,7 +62,7 @@ export default function Trips() {
             <img src="/card34.png" className="offer-img" alt="Hotel offers"/>
             <h3 className="offer-title">Hotel offers</h3>
             <p className="offer-desc">
-              Discover the latest hotel offers.
+              Discover the latest hotel offers.<br></br><br></br>
             </p>
             <button className="offer-btn">اطلب الآن</button>
           </div>
